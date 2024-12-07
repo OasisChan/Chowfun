@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample HTML Document</title>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e7ded4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #afa498;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 3px 4px rgba(252, 237, 237, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+header h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #ff6633;
+}
+
+/* Main Content Section */
+main {
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2, section h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+section img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 15px;
+}
+
+/* Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form input[type="submit"] {
+    background-color: #c99d8f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e65c00;
+}
+
+/* Footer Section */
+footer {
+    background-color: #ffcc99;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+footer address {
+    font-style: normal;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ff6633;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    section h2, section h1 {
+        font-size: 1.5rem;
+    }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h5>JA BA WE</h5>
+        <h2>嚕嚕嚕</h2>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="elyyy">
+            <h2>Home Section</h2>
+            <p>This is a sample home section with some text and an image below.</p>
+            <img src="dog.jpg" alt="Sample Image">
+        </section>
+
+        <section id="about">
+            <h1>About Section</h1>
+            <p>This section contains some information about the page. HTML stands for HyperText Markup Language, which is used for structuring web pages.</p>
+        </section>
+
+        <section id="contact">
+            <h1>Contact hello</h1>
+            <form action="#" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Sample HTML Page. All rights reserved.</p>
+        <address>
+            <p>Contact us at <a href="mailto:info@example.com">info@example.com</a></p>
+        </address>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+    <script>
+        // Inline JavaScript
+        console.log("Welcome to the sample page!");
+    </script>
+</body>
+</html>
